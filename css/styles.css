@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+  border-sizing: border-box;
+  margin:  0;
+  padding:  0;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 1000px)
+{
+  .front-page .video{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 680px;
+  object-fit: cover;
+}
+#blank{
+  height: 680px;
+}
+
+  .project-header img{
+      display: none;
+  }
+}
+@media screen and (min-width: 1001px)
+{
+  .front-page .video{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 660px;
+  object-fit: cover;
+}
+  #blank{
+  height: 660px;
+}
+
+}
+
+.project-header img{
+  position: absolute;
+  transform: scale(0);
+  margin-left: 50vw;
+  transition: 0.3s;
+  z-index: 2;
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.5);
+}
+.project-header h3:hover img{
+  transform: scale(1);
+  z-index: 2;
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.5);
+}
+.project-header h3{
+  cursor: pointer;
+}
+header{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width:  100%;
+  padding: 4vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center ;
+}
+.front-page ul{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+.front-page .row a{
+  display: inline-block;
+  font-size: 1em;
+  background: white;
+  padding: 7px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  height: 2.6em;
+  transition: 0.2s;
+}
+.front-page a:hover{
+  letter-spacing: 6px;
+}
+.front-page{
+  position: absolute;
+  width: 100%;
+  padding: 200px 10vw;
+  justify-content: space-between;
+  align-items:  center;
+  color: white;
+  z-index: 2;
+  right: 0px;
+  transition: all 0.5s;
+}
+.front-page.active{
+  right: 250px;
+}
+.toggle.active{
+  right:  250px;
+}
+.front-page p{
+  font-size: 1.5em;
+}
+.front-page strong{
+  font-size:  7vw;
+  font-weight: 800;
+}
+.link{
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+  margin-left: 5vw;
+}
+.toggle{
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+  right: 0;
+}
+.project-header{
+  width:  100vw;
+  position: relative;
+  padding: 10px 10vw;
+  background: black;
+  right: 0;
+  left: 0;
+}
+.project-header h1{
+font-weight: 800;
+font-size: 4em;
+background-image: linear-gradient(45deg, #47E11D, #2C1DEE);
+  background-size: 30%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+}
+.card-deck{
+    padding: 5vh 5vw;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width:  250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul{
+  position: relative;
+  list-style: none;
+}
+.menu ul li a{
+  text-decoration: none;
+  font-size:  24px;
+  color:  black;
+  transition: 0.1s;
+}
+.menu ul li a:hover{
+  color:#03a9f4 ;
+}
+.projects{
+  position: absolute;
+  padding-left:5vw ;
+}
+.projects .box{
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px;
+}
+.content{
+  color: whitesmoke;
+}
+hr{
+  border-color: dimgray;
+}
+.content h3{
+  color: #3B3FF1;
+  font-weight: 600;
+  font-size: 3em;
+}
+.content p{
+  color: #0FE96B;
+  max-width: 500px;
+  font-size: 1.5em;
+}
+footer ul{
+  list-style: none;
+  display: flex;
+}
+footer ul li{
+  padding: 3px;
+}
+footer img{
+  display: inline-block ;
+  position: absolute;
+  z-index: 100;
+  margin-left: -23px;
+  top: 550px;
+  transform: scale(2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer img:hover{
+  top: 540px;
+  position: absolute;
+  z-index: 100;
+}
+.foot{
+  width: 100vw;
+  height: 200px;
+}
+.foot p{
+  font-family: 'Dancing Script';
+  font-weight: 800;
+  font-size: 30px;
+  width: 100vw;
+  color: black;
+  cursor: pointer;
+}
+.foot a{
+  font-size: 20px;
+  color:  dimgray;
+  background: white;
+  text-decoration: none;
+  padding: 7px 30px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.foot a:hover{
+  color: black;
+  letter-spacing: 4px;
+}
+.foot .justify-content span{
+  font-family: 'Dancing Script';
+}
+.foot{
+  position: relative;
+}
+.foot .justify-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom:  0px;
+  text-align: center;
+}
